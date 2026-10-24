@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">HAND WASH · DETAILING · CERAMIC</p>
+
+        <h1>
+          Showroom shine,<br>
+          every visit.
+        </h1>
+
+        <p class="hero-description">
+          Water-saving hand wash, interior steam clean and<br class="desktop-break">
+          paint protection. Have a coffee while you wait.
+        </p>
+
+        <a href="#book" class="primary-button">Book a wash</a>
+      </div>
+
+      <div class="hero-rings" aria-hidden="true">
+        <div class="ring ring-one"></div>
+        <div class="ring ring-two"></div>
+      </div>
+    </section>
+  <main class="packages">
+    <header class="header">
+      <h2>Packages</h2>
+
+      <div class="vehicle-toggle" aria-label="Select vehicle type">
+        <button
+          type="button"
+          class="active"
+          data-vehicle="saloon"
+          aria-pressed="true">
+          Saloon
+        </button>
+
+        <button
+          type="button"
+          data-vehicle="suv"
+          aria-pressed="false">
+          SUV / van
+        </button>
+      </div>
+    </header>
+
+    <section class="package-grid" aria-label="Car wash packages">
+      <article class="package-card">
+        <h3 class="package-name">EXPRESS</h3>
+
+        <p class="package-price"
+           data-saloon="600"
+           data-suv="800">
+          KSh 600
+        </p>
+
+        <p class="package-description">
+          Exterior hand wash, wheels and tyre shine.
+        </p>
+
+        <p class="package-duration">About 20 min</p>
+      </article>
+
+      <article class="package-card featured">
+        <h3 class="package-name">FULL VALET</h3>
+
+        <p class="package-price"
+           data-saloon="1500"
+           data-suv="2000">
+          KSh 1,500
+        </p>
+
+        <p class="package-description">
+          Express plus vacuum, dashboard and windows inside.
+        </p>
+
+        <p class="package-duration">About 50 min</p>
+      </article>
+
+      <article class="package-card">
+        <h3 class="package-name">DETAIL</h3>
+
+        <p class="package-price"
+           data-saloon="6000"
+           data-suv="7500">
+          KSh 6,000
+        </p>
+
+        <p class="package-description">
+          Steam-cleaned seats, clay bar, polish and wax.
+        </p>
+
+        <p class="package-duration">About 4 hours</p>
+      </article>
+
+    </section>
+
+    <div class="container">
+
+        <h1>Pick a time today</h1>
+
+        <p class="description">
+            Tap a free slot. Grey slots are taken.
+        </p>
+
+        <div class="time-slots">
+
+            <button class="time-slot">08:00</button>
+            <button class="time-slot taken" disabled>09:00</button>
+            <button class="time-slot">10:00</button>
+            <button class="time-slot">11:00</button>
+            <button class="time-slot taken" disabled>12:00</button>
+            <button class="time-slot">14:00</button>
+            <button class="time-slot">15:00</button>
+            <button class="time-slot taken" disabled>16:00</button>
+            <button class="time-slot">17:00</button>
+            <button class="time-slot">18:00</button>
+
+        </div>
+
+        <p id="message">No time selected yet.</p>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
